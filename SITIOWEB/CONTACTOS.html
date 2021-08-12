@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="CSS/estilos.css">
+	<link rel="stylesheet" href="CSS/jquery.excoloSlider.css">
+	<title>Contactenos</title>
+
+<script src="JS/jquery.min.js"></script> 
+<script src="https://code.jquery.com/jquery-lastest.min.js"></script>
+
+
+<script src="JS/jquery.excoloSlider.min.js"></script>
+
+
+</head>
+<body>
+	<div id="contsuperior">
+        <header>
+        	<div id="logotipo">
+        		
+            <a href="INDEX.html"><img src="IMAGENES/LOGO.fw.png" alt="CONSTCITY"></a>
+        	</div>
+              <div id="rsociales">
+              	<a href="http://facebook.com"target="_blank"><img src="IMAGENES/facebook.png" alt="FACEBOOK"></a>
+              	<a href="http://twitter.com"target="_blank"><img src="IMAGENES/twitter.png" alt="TWITTER"></a>
+              	<a href="http://youtube.com"target="_blank"><img src="IMAGENES/youtube.png" alt="YOUTUBE"></a>
+              </div>
+        </header>
+        <nav>
+        	<ul> <li><a href="INDEX.html">INICIO</a></li>
+        		<ul> <li><a href="proyectos.html">PROYECTOS</a></li>
+        			<ul> <li><a href="galeria.html">GALERIA</a></li>
+        				<ul> <li><a href="contacto.html">CONTACTOS</a></li>
+        		</ul> 
+        </nav>
+        <section id="slider">
+          <img src="IMAGENES/slider1.png" alt="Slider1">
+          <img src="IMAGENES/slider2.png" alt="Slider2">
+          <img src="IMAGENES/slider3.png" alt="Slider3">
+        </section>
+    <script>
+     $(function(){
+       $("#slider").excoloSlider({
+       height:295,
+       mouseNav: false,
+       touchNav:true,
+       interval: 5000, //5seconds
+       playReverse: true
+       });
+     });
+    </script>
+	</div>
+  <div id="interior">
+    <section id="contenido">
+      <article class="contenido_inicio">
+        <h3>Contactenos</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt reiciendis est cupiditate dolor perspiciatis commodi aliquam, excepturi ut soluta quia. Cum, eum, iure quam minus eius numquam qui impedit amet!
+        </p>
+        <p>
+          Tel.: <spam>(999) 9999-9999</spam><br>
+          Fax.: <spam>9999-9999</spam><br>
+          E-mail.: <spam>info@constcity.com</spam><br>
+          Direccion <spam>4ta. Ave Calzada Buena Vista Chimaltenango.</spam><br>
+        </p>
+     </article>
+     <article class="contenido_inicio">
+       <h2>Formulario de contacto</h2>
+     <p>
+       Ingrese sus datos, todos los campos son obligatorios
+     </p>
+     <div id="frm_contacto">
+       <form action="enviar.php" name="contacto" method="post">
+         <label>Nombre</label><br>
+         <input type="text" name="Nombre" id="Nombre" placeholder="Escriba su nombre" required /><br>
+         <label>Correo electronico</label><br>
+         <input type="email" name="email" id="email" placeholder="Escriba su correo electronico" required /><br>
+         <label>Asunto</label><br>
+         <input type="text" name="asunto" id="asunto" placeholder="Escriba el asunto del mensaje" required /><br>
+         <label>Mensaje</label><br>
+         <textarea name="mensaje" id="mensaje" rows="10" placeholder="Escriba el mensaje" required></textarea><br>
+         <input type="submit" nombre="enviar" id="enviar" value="Enviar">
+       </form>
+     </div>
+     </article>
+    </section>
+      <aside>
+        <hgroup>
+         <h4>PROYECTOS EN MARCHA</h4>
+         <h6>Recidenciales La Primavera</h6>
+        </hgroup>
+         <p>
+         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti tempora tempore tenetur explicabo. Repudiandae perspiciatis tempore unde facilis harum itaque quae dolor, illo minima officia ipsa, cum perferendis eligendi corrupti.
+         </p>
+         <img src="IMAGENES/ladelicia.png" alt="PRIMAVERA">
+
+         <h6>Edificio Torre Alta</h6>
+         <p>
+         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti tempora tempore tenetur explicabo. Repudiandae perspiciatis tempore unde facilis harum itaque quae dolor, illo minima officia ipsa, cum perferendis eligendi corrupti.
+         </p>
+         <img src="IMAGENES/torrealta.png" alt="TorreAlta">
+      </aside>
+  </div>
+  <div id="coninferior">
+    <footer >
+      <article id="info">
+        <p>
+          Tel.: (999) 9999-9999<br>
+          Fax.: 9999-9999<br>
+          E-mail.: info@constcity.com<br>
+          4ta. Ave Calzada Buena Vista Chimaltenango.
+        </p>
+      </article>
+      <article id="autor">
+       <p>
+          Constcity - viviendo bajo techo<br>
+          ©copyright 2015 AOS<br>
+          Powered By <a href="http://solucioneswebgt.com"target="_blank">www.solucioneswebgt.com</a>
+        </p>
+      </article>
+    </footer>
+  </div>
+</body>
+</html>
+     
